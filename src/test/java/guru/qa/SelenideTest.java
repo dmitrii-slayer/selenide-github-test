@@ -16,7 +16,6 @@ public class SelenideTest {
     @BeforeAll
     static void configure() {
         Configuration.browserSize = "1920x1080";
-        Configuration.holdBrowserOpen = true;
     }
 
     @DisplayName("Проверка наличия SoftAssertions в wiki selenide")
