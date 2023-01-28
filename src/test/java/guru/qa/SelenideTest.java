@@ -1,7 +1,5 @@
 package guru.qa;
 
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -11,12 +9,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class SelenideTest {
-
-    @BeforeAll
-    static void configure() {
-        Configuration.browserSize = "1920x1080";
-    }
+public class SelenideTest extends BaseTest {
 
     @DisplayName("Проверка наличия SoftAssertions в wiki selenide")
     @Test
